@@ -40,7 +40,6 @@ class _HomeState extends State<Home> {
   String _currentDateTime = ("${now.year}-${now.month.toString().padLeft(2,'0')}-${now.day.toString().padLeft(2,'0')} ${_weekdatToString(now.weekday)} ${now.hour.toString().padLeft(2,'0')}:${now.minute.toString().padLeft(2,'0')}");
   //  _currentDateTime => 현재 시간_비교용
   if(chosenDateTime != null && _chosenTime == _currentDateTime){
-    _color = _color !=  Colors.yellow ? Colors.red : Colors.yellow;
     _color = _color ==  Colors.red ? Colors.yellow : Colors.red;
   }else{
     _color = Colors.white;
